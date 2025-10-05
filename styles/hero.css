@@ -109,6 +109,10 @@
     outline: 2px solid var(--pink);
   }
 
+  #first-button {
+    align-items: center;
+  }
+
   #first-button svg {
     height: 75px;
     transform: rotate(90deg);
