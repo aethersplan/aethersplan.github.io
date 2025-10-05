@@ -1,0 +1,67 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #85ffaf;
+  --light-green: #e9fff0;
+
+  --pink: #ff419d;
+  --light-pink: #ffe0ef;
+
+  --dark-green: #2d5b3d;
+  --dark-pink: #5f1337;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-color: var(--light-green);
+  font-family: "Hanken Grotesk", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--pink);
+  font-weight: 700;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border: 5px double var(--green);
+}
+
+iframe {
+  outline: 5px double var(--green);
+}
+
+footer {
+  padding: 4em;
+  background-color: var(--green);
+  border-top: 10px solid var(--pink);
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}

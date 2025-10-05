@@ -1,0 +1,81 @@
+.flexbox {
+  display: flex;
+
+  width: 200vw;
+  height: 100vh;
+}
+
+#first {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2em;
+
+  width: 100vw;
+  height: 100%;
+
+  padding: 2em;
+  background-color: var(--green);
+  font-size: 20px;
+}
+
+#first .content {
+  max-width: 600px;
+}
+
+#first h1 {
+  margin: 0 0 0.8em 0;
+  font-size: 4em;
+}
+
+#first h1::after {
+  content: "";
+  display: block;
+  outline: 5px solid var(--pink);
+}
+
+#first-button {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 2em;
+
+  background-color: transparent;
+  border: none;
+}
+
+#first-button svg {
+  width: 100%;
+  height: 400px;
+}
+
+#first-button svg path, #second-button svg path {
+  stroke: rgb(0, 0, 0);
+  transition: stroke 0.3s, transform 0.3s;
+}
+
+#first-button span,
+#second-button span {
+  font-weight: 800;
+  text-decoration: underline;
+  letter-spacing: 20%;
+  transition: color 0.3s, font-style 0.3s;
+}
+
+#first-button:hover svg path {
+  stroke: var(--pink);
+  transform: translateX(32px);
+}
+
+#first-button:focus svg path {
+  stroke: var(--pink);
+  transform: translateX(64px);
+}
+
+#first-button:hover span,
+#first-button:focus span,
+#second-button:hover span,
+#second-button:focus span {
+  color: var(--pink);
+  font-style: italic;
+}

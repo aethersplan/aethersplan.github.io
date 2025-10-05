@@ -1,0 +1,74 @@
+article {
+  width: 100vw;
+  height: 100vh;
+}
+
+#second {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+}
+
+#second .content {
+  max-width: 700px;
+  margin: 4em auto;
+}
+
+#second .content p {
+  margin: 2em 0;
+}
+
+#second h1 {
+  font-size: 3.842em;
+}
+
+#second h2 {
+  font-size: 2.744em;
+}
+
+#second h3 {
+  font-size: 1.96em;
+}
+
+#second h4 {
+  font-size: 1.4em;
+}
+
+#second h5 {
+  font-size: 1.2em;
+}
+
+#second-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+#second-button svg {
+  width: 25px;
+  height: 25px;
+}
+
+#second-button:hover svg path {
+  stroke: var(--pink);
+  transform: translateX(-32px);
+}
+
+#second-button:focus svg path {
+  stroke: var(--pink);
+  transform: translateX(-64px);
+}
+
+.dark-green {
+  background-color: var(--dark-green);
+  color: #fff;
+}
+
+.dark-pink {
+  background-color: var(--dark-pink);
+  color: #fff;
+}
