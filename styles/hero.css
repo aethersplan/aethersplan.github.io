@@ -49,9 +49,14 @@
   height: 400px;
 }
 
-#first-button svg path, #second-button svg path {
+#first-button svg path,
+#second-button svg path {
   stroke: rgb(0, 0, 0);
   transition: stroke 0.3s, transform 0.3s;
+}
+
+#first-button span::before {
+  content: "— ";
 }
 
 #first-button span,
@@ -78,4 +83,38 @@
 #second-button:focus span {
   color: var(--pink);
   font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+  .flexbox {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  #first {
+    flex-direction: column;
+    gap: 0;
+    min-height: 100vh;
+
+    font-size: 16px;
+  }
+
+  #first h1 {
+    font-size: 3.2em;
+  }
+
+  #first h1::after {
+    content: "";
+    outline: 2px solid var(--pink);
+  }
+
+  #first-button svg {
+    height: 75px;
+    transform: rotate(90deg);
+  }
+
+  #first-button span::before {
+    content: "";
+  }
 }

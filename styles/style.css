@@ -62,6 +62,16 @@ footer {
 }
 
 .footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
   list-style: none;
   padding: 0;
+}
+
+@media screen only and (max-width: 600px) {
+  footer {
+    font-size: 16px;
+  }
 }
