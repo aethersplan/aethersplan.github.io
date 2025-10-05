@@ -28,7 +28,3 @@ firstButton.addEventListener("click", () => {
     }, 500);
   }
 });
-
-window.addEventListener("resize", () => {
-  window.location.reload();
-});
