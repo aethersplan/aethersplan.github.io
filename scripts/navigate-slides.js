@@ -11,6 +11,8 @@ window.addEventListener("load", () => {
     window.scrollTo(0, 0);
 
     setTimeout(() => {
+      window.scrollTo(0, 0);
+
       document.body.style.overflow = "hidden";
     }, 500);
   }
@@ -23,6 +25,8 @@ firstButton.addEventListener("click", () => {
 
   if (computerViewport) {
     setTimeout(() => {
+      secondArticle.scrollIntoView();
+
       document.body.style.overflowX = "hidden";
       document.body.style.overflowY = "visible";
     }, 500);
