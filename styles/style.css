@@ -6,10 +6,10 @@
 
 :root {
   --green: #85ffaf;
-  --light-green: #e9fff0;
+  --light-green: #e0ffea;
 
   --pink: #ff419d;
-  --light-pink: #ffe0ef;
+  --light-pink: #efebff;
 
   --dark-green: #2d5b3d;
   --dark-pink: #5f1337;
@@ -52,6 +52,11 @@ iframe {
   outline: 5px double var(--green);
 }
 
+.extract-data {
+  font-size: 0.9em;
+  font-style: italic;
+}
+
 footer {
   padding: 4em;
   background-color: var(--green);
@@ -71,7 +76,7 @@ footer {
 }
 
 #source-list,
-.long-text {
+.extract-data {
   word-break: break-all;
   word-wrap: break-word;
   overflow-wrap: break-word;

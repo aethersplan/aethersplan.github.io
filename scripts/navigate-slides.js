@@ -14,7 +14,7 @@ window.addEventListener("load", () => {
       window.scrollTo(0, 0);
 
       document.body.style.overflow = "hidden";
-    }, 500);
+    }, 250);
   }
 });
 
