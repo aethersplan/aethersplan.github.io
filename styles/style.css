@@ -82,7 +82,7 @@ footer {
   overflow-wrap: break-word;
 }
 
-@media screen only and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   footer {
     font-size: 16px;
   }
